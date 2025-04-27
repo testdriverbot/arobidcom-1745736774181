@@ -1,0 +1,57 @@
+version: 4.2.29
+session: 680dd752715f68d750e81ada
+steps:
+  - prompt: Click on the "Register" link in the header.
+    commands:
+      - command: hover-text
+        text: Register
+        description: registration link in the header
+        action: click
+  - prompt: Fill in the registration form with test data.
+    commands:
+      - command: hover-text
+        text: Mr
+        description: title dropdown
+        action: click
+      - command: hover-text
+        text: Last name *
+        description: last name input label
+        action: click
+      - command: type
+        text: Doe
+      - command: hover-text
+        text: First name *
+        description: first name input label
+        action: click
+      - command: type
+        text: Jane
+      - command: hover-text
+        text: Nationality *
+        description: nationality dropdown
+        action: click
+      - command: type
+        text: Testland
+      - command: hover-text
+        text: Phone number *
+        description: phone number input label
+        action: click
+      - command: type
+        text: 123456789
+      - command: hover-text
+        text: Email *
+        description: email input label
+        action: click
+      - command: type
+        text: test@example.com
+      - command: hover-text
+        text: Password *
+        description: password input label
+        action: click
+      - command: type
+        text: TestPass123
+      - command: hover-text
+        text: Confirm Password *
+        description: confirm password input label
+        action: click
+      - command: type
+        text: TestPass123
