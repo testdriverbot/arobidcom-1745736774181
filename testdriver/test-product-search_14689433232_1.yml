@@ -1,0 +1,13 @@
+version: 4.2.29
+session: 680dd76a43e1aa906e7eba39
+steps:
+  - prompt: Click on the search input field.
+    commands:
+      - command: hover-text
+        text: Search product by keyword
+        description: search input field in the top navigation bar
+        action: click
+  - prompt: Type a product name.
+    commands:
+      - command: type
+        text: Laptop
