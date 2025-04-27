@@ -1,0 +1,19 @@
+version: 4.2.29
+session: 680dd75a715f68d750e81ae3
+steps:
+  - prompt: Click on the "EN - VND" language selector.
+    commands:
+      - command: hover-text
+        text: EN - VND
+        description: language selector in the top right corner
+        action: click
+  - prompt: Select a different language.
+    commands:
+      - command: hover-text
+        text: English
+        description: English language option in the language selection menu
+        action: click
+  - prompt: Assert that the language of the website changes.
+    commands:
+      - command: assert
+        expect: the text "Find suppliers now!" is visible on the page
