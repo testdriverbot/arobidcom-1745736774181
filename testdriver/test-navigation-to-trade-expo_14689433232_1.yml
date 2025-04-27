@@ -1,0 +1,13 @@
+version: 4.2.29
+session: 680dd760715f68d750e81ae6
+steps:
+  - prompt: Click on the "Trade Expo" link in the header.
+    commands:
+      - command: hover-text
+        text: Trade Expo
+        description: link in the header
+        action: click
+  - prompt: Assert that the Trade Expo page is displayed.
+    commands:
+      - command: assert
+        expect: the Trade Expo page is displayed with the URL tradexpo.arobid.com
